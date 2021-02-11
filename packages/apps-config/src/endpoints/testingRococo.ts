@@ -53,6 +53,14 @@ export function createRococo (t: TFunction): EndpointOption {
       },
       // add any additional parachains here, alphabetical
       {
+        info: 'rococoAcala',
+        paraId: 666,
+        text: t('rpc.rococo.acala', 'Mandala PC2', { ns: 'apps-config' }),
+        providers: {
+          Acala: 'wss://rococo-1.acala.laminar.one/ws'
+        }
+      },
+      {
         info: 'rococoAres',
         paraId: 6,
         text: t('rpc.rococo.ares', 'Ares PC1', { ns: 'apps-config' }),
@@ -141,27 +149,19 @@ export function createRococo (t: TFunction): EndpointOption {
         }
       },
       {
-        info: 'rococoPolkabtc',
-        paraId: 21,
-        text: t('rpc.rococo.polkabtc', 'PolkaBTC PC1', { ns: 'apps-config' }),
-        providers: {
-          Interlay: 'wss://rococo.polkabtc.io/api/parachain'
-        }
-      },
-      {
-        info: 'rococoAcala',
-        paraId: 666,
-        text: t('rpc.rococo.acala', 'Mandala PC2', { ns: 'apps-config' }),
-        providers: {
-          Acala: 'wss://rococo-1.acala.laminar.one/ws'
-        }
-      },
-      {
         info: 'rococoKilt',
         paraId: 12623,
         text: t('rpc.rococo.kilt', 'KILT PC1', { ns: 'apps-config' }),
         providers: {
           'KILT Protocol': 'wss://para.rococo-v1.kilt.io'
+        }
+      },
+      {
+        info: 'rococoLitentry',
+        paraId: 1984,
+        text: t('rpc.rocco.litentry', 'Litentry Rostock', { ns: 'apps-config' }),
+        providers: {
+          Litentry: 'wss://rococov1.litentry.io'
         }
       },
       {
@@ -181,19 +181,19 @@ export function createRococo (t: TFunction): EndpointOption {
         }
       },
       {
+        info: 'rococoPolkabtc',
+        paraId: 21,
+        text: t('rpc.rococo.polkabtc', 'PolkaBTC PC1', { ns: 'apps-config' }),
+        providers: {
+          Interlay: 'wss://rococo.polkabtc.io/api/parachain'
+        }
+      },
+      {
         info: 'rococoRobonomics',
         paraId: 3000,
         text: t('rpc.rococo.robonomics', 'Robonomics PC2', { ns: 'apps-config' }),
         providers: {
           Airalab: 'wss://rococo.parachain.robonomics.network'
-        }
-      },
-      {
-        info: 'rococoZenlink',
-        paraId: 188,
-        text: t('rpc.rococo.zenlink', 'Zenlink PC1', { ns: 'apps-config' }),
-        providers: {
-          Zenlink: 'wss://rococo-parachain.zenlink.pro'
         }
       },
       {
@@ -213,11 +213,11 @@ export function createRococo (t: TFunction): EndpointOption {
         }
       },
       {
-        info: 'rococoLitentry',
-        paraId: 1984,
-        text: t('rpc.rocco.litentry', 'Litentry Rostock', { ns: 'apps-config' }),
+        info: 'rococoZenlink',
+        paraId: 188,
+        text: t('rpc.rococo.zenlink', 'Zenlink PC1', { ns: 'apps-config' }),
         providers: {
-          Litentry: 'wss://rococov1.litentry.io'
+          Zenlink: 'wss://rococo-parachain.zenlink.pro'
         }
       }
     ]
