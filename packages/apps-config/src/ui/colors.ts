@@ -149,7 +149,7 @@ export const nodeColors: Record<string, any> = [
   ['Encointer Node TEE proxy', nodeEncointerTeeproxy],
   ['Equilibrium node', nodeEquilibrium],
   ['Jupiter Node', nodeJupiter],
-  ['Litentry Parachain Collator', nodeLitentry],
+  ['Litentry Collator', nodeLitentry],
   ['nodle chain node', nodeNodle],
   ['Polkadex Node', nodePolkadex],
   ['SORA-staging Node', nodeSora],
